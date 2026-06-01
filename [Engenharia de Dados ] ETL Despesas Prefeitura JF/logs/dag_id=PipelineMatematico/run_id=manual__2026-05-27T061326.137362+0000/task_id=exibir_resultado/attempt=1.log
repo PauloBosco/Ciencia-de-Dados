@@ -1,0 +1,5 @@
+{"timestamp":"2026-05-27T06:13:29.238883Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-05-27T06:13:29.239559Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/PrimeiraDag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-05-27T06:13:29.292313Z","level":"info","event":"Iniciando a task de carga final.","logger":"airflow.task","filename":"PrimeiraDag.py","lineno":35}
+{"timestamp":"2026-05-27T06:13:29.292438Z","level":"info","event":"Pipeline concluído com sucesso. Resultado final para carga: 1000","logger":"airflow.task","filename":"carregar_dados.py","lineno":8}
+{"timestamp":"2026-05-27T06:13:29.292503Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}

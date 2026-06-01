@@ -1,0 +1,12 @@
+{"timestamp":"2026-05-27T14:25:19.880317Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-05-27T14:25:19.881029Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/PrimeiraDag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-05-27T14:25:20.060841Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/PrimeiraDag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2026-05-27T14:25:20.060949Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/PrimeiraDag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2026-05-27T14:25:20.072825Z","level":"info","event":"Executando módulo de transformação e limpeza...","logger":"airflow.task","filename":"PrimeiraDag.py","lineno":30}
+{"timestamp":"2026-05-27T14:25:20.072965Z","level":"info","event":"Iniciando a transformação dos dados. Origem: /opt/airflow/data/bronze/raw_data.csv","logger":"transform_data","filename":"transform_data.py","lineno":19}
+{"timestamp":"2026-05-27T14:25:20.163125Z","level":"info","event":"Dados Carregados com sucesso. Total de linhas [14606]","logger":"transform_data","filename":"transform_data.py","lineno":27}
+{"timestamp":"2026-05-27T14:25:20.179338Z","level":"info","event":"Remoção de duplicatas: 0 linhas removidas.","logger":"transform_data","filename":"transform_data.py","lineno":51}
+{"timestamp":"2026-05-27T14:25:20.181018Z","level":"info","event":"Nomes das colunas padronizados para snake_case.","logger":"transform_data","filename":"transform_data.py","lineno":58}
+{"timestamp":"2026-05-27T14:25:20.182051Z","level":"info","event":"Salvando dados limpos na camada Silver: /opt/airflow/data/silver/cleaned_data.csv","logger":"transform_data","filename":"transform_data.py","lineno":33}
+{"timestamp":"2026-05-27T14:25:20.441126Z","level":"info","event":"Persistência na camada Silver concluída.","logger":"transform_data","filename":"transform_data.py","lineno":37}
+{"timestamp":"2026-05-27T14:25:20.442050Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}
